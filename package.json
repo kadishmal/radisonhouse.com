@@ -4,9 +4,16 @@
   "version": "0.1.7",
   "keywords": ["pulsr", "framework", "web", "pagelet", "rest", "restful", "app", "api"],
   "author": "Esen Sagynov <kadishmal@gmail.com>",
-  "subdomain": "pulsr.local",
+  "subdomain": "radisonhouse",
   "domains": [
-    "pulsr.local"
+    "www.radisonhouse.jit.su",
+    "static.radisonhouse.jit.su",
+    "radisonhouse.com",
+    "www.radisonhouse.com",
+    "static.radisonhouse.com",
+    "radisonhouse.info",
+    "www.radisonhouse.info",
+    "static.radisonhouse.info"
   ],
   "engines": {
     "node": ">=0.8.0"
