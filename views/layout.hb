@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="//{{staticDomain}}/less/style.less">
     <link rel="stylesheet" href="//{{staticDomain}}/less/mqueries.less">
     {{{cssStyles}}}
-	<script src="//{{staticDomain}}/js/libs/require.js"></script>
 	<!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

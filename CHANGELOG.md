@@ -7,6 +7,7 @@
 - Enh: added radisonhouse domains to package.json.
 - Fix: "handlebars" module should start from a lowercase letter.
 - Enh: renamed the Nodejitsu app name.
+- Enh: removed requirejs from the client side as it is not used as of now.
 
 # Pulsr Web App Framework Change Log
 
