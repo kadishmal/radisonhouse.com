@@ -170,7 +170,7 @@ define(['module', 'path'], function(module, path) {
     // These are configurations for Google Analytics.
     conf.googleAnalytics = {
         // GA tracking code.
-        code: '',
+        code: 'UA-7364332-1',
         // GA should set cookies not to second level domain
         // but to the domain used by this site.
         domain: conf.app.domains.root
