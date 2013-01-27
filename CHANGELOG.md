@@ -6,6 +6,7 @@
 - Enh: added Google Analytics code.
 - Enh: added radisonhouse domains to package.json.
 - Fix: "handlebars" module should start from a lowercase letter.
+- Enh: renamed the Nodejitsu app name.
 
 # Pulsr Web App Framework Change Log
 
