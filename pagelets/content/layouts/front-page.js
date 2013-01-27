@@ -24,7 +24,7 @@ define(['fs', 'path', 'conf', 'async', 'marked'], function(fs, path, conf, async
                 if (contents.length > 1) {
                     output +=
                         '<div class="row">' +
-                            '<div class="' + columns + ' columns">';
+                            '<div class="' + columns + ' columns front-page-column">';
                     // first build up the first column
                     for (var i = 1; i < contents.length; i += 2) {
                         output +=
@@ -36,7 +36,7 @@ define(['fs', 'path', 'conf', 'async', 'marked'], function(fs, path, conf, async
                     output += '</div>';
                     // then build up the second column
                     if (contents.length > 2) {
-                        output += '<div class="' + columns + ' columns">';
+                        output += '<div class="' + columns + ' columns front-page-column">';
 
                         for (var i = 2; i < contents.length; i += 2) {
                             output +=
