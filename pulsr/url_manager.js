@@ -1,4 +1,4 @@
-define(['url_patterns', 'requirejs', 'conf', 'path', 'session', 'error_handler', 'url'], function (url_patterns, requirejs, conf, path, session, error_handler, url) {
+define(['url_patterns', 'requirejs', 'conf', 'path', 'session', 'error_handler'], function (url_patterns, requirejs, conf, path, session, error_handler) {
     var regExpStore = {};
 
     for (var pattern in url_patterns) {

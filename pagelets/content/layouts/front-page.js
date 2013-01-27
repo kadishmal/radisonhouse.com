@@ -1,25 +1,55 @@
-// post.js
-// This layout displays single post contents on a page.
-// Intended for the use to display specific articles.
+// front-page.js
+// This layout displays multiple contents on one page.
+// Intended for the use on front pages.
+// The first article will be displayed in full length
+// on the top of the page taking full width space.
+// The rest articles will be trimmed to certain
+// number of characters and will have "Read more" like
+// button. These articles will be displayed two on one
+// row.
 define(['fs', 'path', 'conf', 'async', 'marked'], function(fs, path, conf, async, marked) {
     return {
         render: function (contents, display) {
             var output = '';
 
             if (contents.length) {
-                // prepare the page (grid) for all contents.
+                var columns = (contents.length > 2 ? 'six' : 'twelve');
+                // Prepare the page (grid) for all contents.
                 // Each content should have its own place on the page.
                 output +=
                     '<div class="row">' +
-                        '<article class="mobile-four columns" id="content-' + contents[0] + '"></article>' +
+                        '<div class="twelve columns" id="content-' + contents[0] + '"></div>' +
                     '</div>';
 
-                for (var i = 1; i < contents.length; i += 2) {
+                if (contents.length > 1) {
                     output +=
                         '<div class="row">' +
-                            '<div class="six columns" id="content-' + contents[i] + '"></div>' +
-                            '<div class="six columns" id="content-' + (i + 1 < contents.length ? contents[i + 1] : '') + '"></div>' +
-                        '</div>';
+                            '<div class="' + columns + ' columns">';
+                    // first build up the first column
+                    for (var i = 1; i < contents.length; i += 2) {
+                        output +=
+                            '<div class="row">' +
+                                '<div class="twelve columns" id="content-' + contents[i] + '"></div>' +
+                            '</div>';
+                    }
+                    // close the "twelve columns"
+                    output += '</div>';
+                    // then build up the second column
+                    if (contents.length > 2) {
+                        output += '<div class="' + columns + ' columns">';
+
+                        for (var i = 2; i < contents.length; i += 2) {
+                            output +=
+                                '<div class="row">' +
+                                    '<div class="twelve columns" id="content-' + contents[i] + '"></div>' +
+                                '</div>';
+                        }
+
+                        // close the "twelve columns"
+                        output += '</div>';
+                    }
+                    // close the "row"
+                    output += '</div>';
                 }
 
                 output =
@@ -44,13 +74,10 @@ define(['fs', 'path', 'conf', 'async', 'marked'], function(fs, path, conf, async
                             var match = data.match(/<a[^>]+class="[^"]*more[^"]*"[^>]*>[^<]+<\/a>/);
 
                             if (match) {
-                                var ix = data.indexOf(match[0]);
-
-                                // remove the "Read more" button
-                                data = data.substring(0, ix) + data.substring(ix + match[0].length);
+                                data = data.substring(0, data.indexOf(match[0]) + match[0].length);
                             }
 
-                            data = '<div class="hide" id="'+ contentID +'">' + marked(data) + '</div>' +
+                            data = '<div class="hide chunked" id="'+ contentID +'">' + marked(data) + '</div>' +
                                 '<script>' +
                                     'var contentBody = document.getElementById("'+ contentID +'");' +
                                     'document.getElementById("' + containerID + '").innerHTML = ' +

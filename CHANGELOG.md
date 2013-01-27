@@ -1,3 +1,9 @@
+# Radison Guesthouse Web App Change Log
+
+## Version 2.0 January 27, 2013
+
+- v2.0: New Radison Guesthouse website based on Pulsr Node.js Web Framework.
+
 # Pulsr Web App Framework Change Log
 
 ## Version 0.1.7 January 5, 2013

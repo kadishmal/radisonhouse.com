@@ -1,7 +1,12 @@
 define(['fs', 'handlebars', 'conf', 'requirejs', 'module', 'path', 'async', 'fileCache', 'underscore'], function(fs, Handlebars, conf, requirejs, module, path, async, fileCache, _) {
     var views = conf.dir.views,
         templateExtension = conf.file.extensions.template,
-        mainLayoutPath = path.join(views, conf.file.mainLayout + templateExtension);
+        mainLayoutPath = path.join(views, conf.file.mainLayout + templateExtension),
+        staticHosts = {};
+
+    function isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
 
     return {
         title: '',
@@ -37,6 +42,8 @@ define(['fs', 'handlebars', 'conf', 'requirejs', 'module', 'path', 'async', 'fil
                             var body = Handlebars.compile(data),
                                 headerSent = false,
                                 cssStyles = '',
+                                host = request.headers.host,
+                                staticHost,
                                 renderPagelet = function(info, done) {
                                     var pageletPath = path.join(conf.dir.pagelets, info.name, info.name),
                                         sendChunk = function (data, more) {
@@ -76,18 +83,50 @@ define(['fs', 'handlebars', 'conf', 'requirejs', 'module', 'path', 'async', 'fil
                                     });
                                 };
 
+                            if (host) {
+                                if (staticHosts.hasOwnProperty(host)) {
+                                    staticHost = staticHosts[host];
+                                }
+                                else{
+                                    var hostPort = host.split(':'),
+                                        domains = hostPort[0].split('.'),
+                                        topDomain = domains[domains.length - 1];
+
+                                    // Check if the topDomain, which is the last part of the domain,
+                                    // is a number. If it is, then it's an IP address. In this case,
+                                    // the static domain should be the same IP.
+                                    if (isNumber(topDomain)) {
+                                        staticHost = host;
+                                    }
+                                    else{
+                                        staticHost = 'static';
+
+                                        for (var i = 1; i < domains.length; ++i) {
+                                            staticHost += '.' + domains[i];
+                                        }
+
+                                        staticHost += (hostPort.length == 2 ? ':' + hostPort[1] : '');
+                                    }
+
+                                    staticHosts[host] = staticHost;
+                                }
+                            }
+                            else{
+                                staticHost = conf.app.domains.static;
+                            }
+
                             // if this controller needs additional CSS styles
                             // add them to the template
                             if (controller.css) {
                                 controller.css.forEach(function (file) {
                                     cssStyles += '<link rel="stylesheet" href="//' +
-                                        conf.app.domains.static + '/less/' + file + '">';
+                                        staticHost + '/less/' + file + '">';
                                 });
                             }
 
                             layout = layout({
                                 title: (typeof controller.title === 'function' ? controller.title(request) : controller.title),
-                                staticDomain: conf.app.domains.static,
+                                staticDomain: staticHost,
                                 cssStyles: cssStyles,
                                 body: body()
                             });

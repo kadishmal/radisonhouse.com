@@ -7,6 +7,8 @@ define(function() {
         // blog and all kinds of content requests can be handled by the same
         // "blog" controller
         '/blog(/([\\w-]+)*)*': 'post',
+        '/([a-zA-z0-9_\-]+)': 'post',
+        '/index\.php.+&id=(\\d+).+': 'post',
 		// The below will match everything else: used as the last option.
 		// DO NOT remove it or the response will never be returned.
 		'/.*': 'fileHandler'

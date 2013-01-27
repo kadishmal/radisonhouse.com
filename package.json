@@ -29,7 +29,7 @@
 	  "mime": "1.2.7",
 	  "mkdirp": "0.3.4",
 	  "moment": "1.7.2",
-	  "requirejs": "2.1.2",
+	  "requirejs": "2.1.4",
 	  "ua-parser": "0.3.0",
 	  "underscore": "1.4.2",
 	  "uglify-js": "2.2.2"
