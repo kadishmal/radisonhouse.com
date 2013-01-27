@@ -12,6 +12,8 @@ To the East of Radison Guesthouse You can find Kyrgyz Government White House and
 
 Below You can see Radison Guesthouse on Google Maps. You may drag the map, zoom in and out using Your mouse scroll button or by double click. Some panorama pictures of frequently visited places are also available to view.
 
+<iframe class="twelve columns mobile-four" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=42.880622,74.590505&amp;spn=0.002775,0.005316&amp;t=h&amp;z=18&amp;lci=com.panoramio.all"></iframe><br /><small><a href="https://maps.google.com/?ie=UTF8&amp;ll=42.880622,74.590505&amp;spn=0.002775,0.005316&amp;t=h&amp;z=18&amp;lci=com.panoramio.all&amp;source=embed">View Larger Map</a></small>
+
 ###### Radison Guesthouse Contact Details:
 
 <div class="panel callout twelve columns">
