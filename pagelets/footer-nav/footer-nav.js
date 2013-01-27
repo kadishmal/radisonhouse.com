@@ -1,6 +1,6 @@
 // navigation.js
 // Displays main menu
-define(['pagelet', 'underscore', 'fs', 'path', 'module', 'conf', 'Handlebars'], function(Pagelet, _, fs, path, module, conf, Handlebars) {
+define(['pagelet', 'underscore', 'fs', 'path', 'module', 'conf', 'handlebars'], function(Pagelet, _, fs, path, module, conf, Handlebars) {
     Handlebars.registerHelper('link', function(text, url) {
         text = Handlebars.Utils.escapeExpression(text);
         url  = Handlebars.Utils.escapeExpression(url);

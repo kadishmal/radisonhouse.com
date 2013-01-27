@@ -1,6 +1,6 @@
 // ga.js
 // Displays Google Analytics Code
-define(['pagelet', 'underscore', 'fs', 'path', 'module', 'conf', 'Handlebars'], function(Pagelet, _, fs, path, module, conf, Handlebars) {
+define(['pagelet', 'underscore', 'fs', 'path', 'module', 'conf', 'handlebars'], function(Pagelet, _, fs, path, module, conf, Handlebars) {
     var pagelet = new Pagelet;
 
     return _.extend(pagelet, {

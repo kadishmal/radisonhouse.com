@@ -5,6 +5,7 @@
 - v2.0: New Radison Guesthouse website based on Pulsr Node.js Web Framework.
 - Enh: added Google Analytics code.
 - Enh: added radisonhouse domains to package.json.
+- Fix: "handlebars" module should start from a lowercase letter.
 
 # Pulsr Web App Framework Change Log
 
