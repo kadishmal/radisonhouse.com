@@ -10,6 +10,7 @@
 - Enh: removed requirejs from the client side as it is not used as of now.
 - Enh: on iPad don't display two columns on the front page. Don't look nice.
 - Enh: added Google Maps to display Radison Guesthouse location.
+- Enh: removed Google Maps since the map doesn't display labels. No point. Instead show a link button which redirects to Google maps site.
 
 # Pulsr Web App Framework Change Log
 

@@ -10,9 +10,9 @@ Radison Guesthouse is five minutes walking from one of "Narodnyi" ("National") C
 
 To the East of Radison Guesthouse You can find Kyrgyz Government White House and next to it there is a National Museum, which is one of the biggest museums not only in Kyrgyzstan but in whole Central Asia. The convenient location of Radison Guesthouse in City Center lets You save Your time in getting everywhere You want in less time, leaving more opportunity to enjoy Your trip.
 
-Below You can see Radison Guesthouse on Google Maps. You may drag the map, zoom in and out using Your mouse scroll button or by double click. Some panorama pictures of frequently visited places are also available to view.
+To view Radison Guesthouse on Google Maps, click on the below **View on Google Maps** button. It will open a Google Maps website where You can drag the map, zoom in and out using Your mouse scroll button or by double click. Some panorama pictures of frequently visited places are also available to view.
 
-<iframe class="twelve columns mobile-four" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=42.880622,74.590505&amp;spn=0.002775,0.005316&amp;t=h&amp;z=18&amp;lci=com.panoramio.all"></iframe><br /><small><a href="https://maps.google.com/?ie=UTF8&amp;ll=42.880622,74.590505&amp;spn=0.002775,0.005316&amp;t=h&amp;z=18&amp;lci=com.panoramio.all&amp;source=embed">View Larger Map</a></small>
+<p style="text-align:center"><a class="small button" href="https://maps.google.com/?ie=UTF8&amp;ll=42.880622,74.590505&amp;spn=0.002775,0.005316&amp;t=h&amp;z=18&amp;lci=com.panoramio.all&amp;source=embed" target="_blank">View on Google Maps</a></p>
 
 ###### Radison Guesthouse Contact Details:
 
