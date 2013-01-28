@@ -1,6 +1,6 @@
 <div class="row">
     <div class="three columns">
-        <img src="img/radisonhouse_logo.png" width="210" height="80" />
+        <img src="http://static.radisonhouse.com/img/radisonhouse_logo.png" width="210" height="80" />
     </div>
     <div class="three columns end">
         <a id="askQuestion" href="/contacts" class="medium success button">Contact us</a>

@@ -1,6 +1,6 @@
 #### [Accommodation](/accommodation "Accommodation")
 
-![Radison suite](/img/suite.jpeg "Radison suite")
+![Radison suite](http://static.radisonhouse.com/img/suite.jpeg "Radison suite")
 
 Radison Guesthouse in Kyrgyzstan! provides seven rooms of three types for 15 in total guests.
 

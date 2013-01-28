@@ -9,7 +9,7 @@
 </div>
 <div class="row">
     <div class="three columns">
-        ![Radison Garden](/img/garden.jpeg "Radison Garden")
+        ![Radison Garden](http://static.radisonhouse.com/img/garden.jpeg "Radison Garden")
     </div>
     <div class="nine columns">
         <p>Radison Guesthouse welcomes You to relax and retreat from the hustle and bustle of all that Bishkek has to offer. Radison green garden full of roses and climbers lets You enjoy Your trip and feel Yourself at home, even though You are far away. The hot summer wheather gives away to a cooled comfortable room with an adjusted air-conditioner. Your room is also equipped with an attached bath and hot as well as cold water 24 hours a day. New interactive TV System with 30 Satellite TV channels lets You entertain and stay in excellent mood! You feel Yourself HAPPY and Secure!</p>

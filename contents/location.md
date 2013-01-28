@@ -1,6 +1,6 @@
 #### [Radison Guesthouse Location](/location "Radison Guesthouse Location")
 
-![Radison Guesthouse in Kyrgyzstan!](/img/gate.jpeg "Radison Guesthouse in Kyrgyzstan!")
+![Radison Guesthouse in Kyrgyzstan!](http://static.radisonhouse.com/img/gate.jpeg "Radison Guesthouse in Kyrgyzstan!")
 
 Radison Guesthouse is conveniently located in City Center of Bishkek on the corner of Abdumomunova Street and broad Manas Prospect behind pink walls and a green gate. On the opposite side of Radison Guesthouse in the center of beautiful, lush Youth Park and Boulevard the famous National Filarmonia is located.
 

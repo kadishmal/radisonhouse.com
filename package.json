@@ -1,7 +1,7 @@
 {
   "name": "radisonhouse",
   "description": "Pulsr based Node.js app",
-  "version": "0.1.7-8",
+  "version": "0.1.7-12",
   "keywords": [
     "pulsr",
     "framework",

@@ -11,6 +11,9 @@
 - Enh: on iPad don't display two columns on the front page. Don't look nice.
 - Enh: added Google Maps to display Radison Guesthouse location.
 - Enh: removed Google Maps since the map doesn't display labels. No point. Instead show a link button which redirects to Google maps site.
+- Enh: Optimized images with ImageOptim.app.
+- Enh: Use static cookieless domain for images.
+- Enh: Set CloudFront as a CDN for all static files.
 
 # Pulsr Web App Framework Change Log
 
